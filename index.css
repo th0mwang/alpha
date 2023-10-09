@@ -20,9 +20,7 @@ body {
     font-weight: 700;
     font-style: normal;
     font-size: 5ch;
-    .text-with-outline {
-        color: transparent; /* Make the text transparent */
         -webkit-text-stroke: 2px #ED229D; /* Outline with the specified color and width */
-        text-stroke: 2px #ED229D; /* Outline with the specified color and width */
-      }
+        text-stroke: 0.1px #ED229D; /* Outline with the specified color and width */
+      
   }
