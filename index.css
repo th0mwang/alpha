@@ -3,6 +3,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  font-stretch: 200%;
   height: 100vh; /* Set the height to ensure full coverage */
   margin: 0; /* Remove default margin */
     display: flex;
@@ -15,18 +16,34 @@ body {
     width: 100%;
     height: 100%;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content:center;
     position: relative;
+    font-stretch:ultra-expanded;
   }  
   a,p{
     color: #fff;
     font-family: "moret", serif;
-    font-weight: 700;
+    font-weight: bold;
     font-style: normal;
-    font-size: 5ch;
-    font-stretch: 200%;
+    font-size: 10vw;
+   transform: scale(1.5,1);
+   transition: font-size 0.5s ease;
+   transition: text-shadow 0.5s ease;
+    -webkit-text-stroke: 0.05vw #ED229D; /* Outline with the specified color and width */
+    
+}
+a:hover{
+    font-size: 10.75vw;
+    text-shadow:2px 2px 8px#ED229D;
+}
+p1{
+    text-align: center;
+    color: #fff;
+    font-family: "moret", serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 5vw;
     text-stroke: 0.01ch #ED229D; /* Outline with the specified color and width */
-    -webkit-text-stroke: 0.01ch #ED229D; /* Outline with the specified color and width */
-   /*I asked ChatGPT for help with making the outline for my text*/   
-  }
+    -webkit-text-stroke: 0.01ch #ED229D; /* Outline with the specified color and width */ 
+}
