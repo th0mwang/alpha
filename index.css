@@ -6,15 +6,15 @@ body, html {
   background-repeat: no-repeat;
   background-attachment: fixed;
   font-stretch: 200%;
-  height: 100%; /* Set the height to ensure full coverage */
-  margin: 0; /* Remove default margin */
+  height: 100%; 
+  margin: 0; 
   }
 
 .flex {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* Center child elements horizontally */
-  text-align: center; /* You can remove this line, as it doesn't affect centering */
+  justify-content: center; 
+  text-align: center;
 }
  
 a{
@@ -28,7 +28,7 @@ a{
    transform: scale(1.5,1);
    transition: font-size 1s ease;
    transition: text-shadow 0.5s ease;
-    -webkit-text-stroke: 0.05vw #ED229D; /* Outline with the specified color and width */
+    -webkit-text-stroke: 0.05vw #ED229D;
 }
 
 a:hover{
@@ -42,8 +42,8 @@ p1{
     font-weight: normal;
     font-style: normal;
     font-size: 3vw;
-    text-stroke: 0.01ch #ED229D; /* Outline with the specified color and width */
-    -webkit-text-stroke: 0.01ch #ED229D; /* Outline with the specified color and width */ 
+    text-stroke: 0.01ch #ED229D; 
+    -webkit-text-stroke: 0.01ch #ED229D;  
 }
 footer {
     display: inline-block;
