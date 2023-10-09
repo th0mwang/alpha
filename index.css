@@ -1,12 +1,12 @@
 
-body {
+body, html {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0)10%, rgba(0, 0, 0, 1)90%), url('/images/AkiraNeoTokyo.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   font-stretch: 200%;
-  height: 100vh; /* Set the height to ensure full coverage */
+  height: 100%; /* Set the height to ensure full coverage */
   margin: 0; /* Remove default margin */
   }
 
@@ -23,7 +23,7 @@ a{
     font-family: "moret", serif;
     font-weight: bold;
     font-style: normal;
-    font-size: 5%;
+    font-size: 5vw;
     text-align: center;
    transform: scale(1.5,1);
    transition: font-size 1s ease;
@@ -45,3 +45,7 @@ p1{
     text-stroke: 0.01ch #ED229D; /* Outline with the specified color and width */
     -webkit-text-stroke: 0.01ch #ED229D; /* Outline with the specified color and width */ 
 }
+footer {
+    display: inline-block;
+    margin-bottom: 10vh;
+   }
