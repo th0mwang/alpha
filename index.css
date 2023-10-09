@@ -9,18 +9,22 @@ body {
   height: 100vh; /* Set the height to ensure full coverage */
   margin: 0; /* Remove default margin */
   }
-  .flex{
- display: flex;
- flex-wrap: wrap;
-text-align: center;
-}  
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center child elements horizontally */
+  text-align: center; /* You can remove this line, as it doesn't affect centering */
+}
+ 
 a{
-    text-align: center;
+
     color: #fff;
     font-family: "moret", serif;
     font-weight: bold;
     font-style: normal;
-    font-size: 3vw;
+    font-size: 5%;
+    text-align: center;
    transform: scale(1.5,1);
    transition: font-size 1s ease;
    transition: text-shadow 0.5s ease;
@@ -28,7 +32,7 @@ a{
 }
 
 a:hover{
-    font-size: 5vw;
+    font-size: 6vw;
     text-shadow:2px 2px 8px#ED229D;
 }
 p1{
