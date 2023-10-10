@@ -35,7 +35,7 @@ p1{
   flex-wrap: wrap;
   padding: 5vh;
   margin: 1vh; 
-  background: radial-gradient(closest-side,#0129ff,#000ceb,black 99vh);
+  background: radial-gradient(closest-side,#0129ff,#000ceb,black 200%);
   border-radius: 1.5vh; 
   align-items: center;
   justify-content: center;
