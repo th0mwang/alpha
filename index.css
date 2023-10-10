@@ -1,48 +1,51 @@
 
-body, html {
+body{
   background-color: black;
-  font-stretch: 200%;
-  height: 100%; 
-  margin: 0; 
   }
 
-.flex {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; 
-  text-align: center;
-}
+
  
 a{
-
     color: #fff;
-    font-family: "moret", serif;
+    font-family:'HBO Max', sans-serif;
     font-weight: bold;
     font-style: normal;
-    font-size: 5vw;
-    text-align: center;
-   transform: scale(1.5,1);
-   transition: font-size 1s ease;
-   transition: text-shadow 0.5s ease;
-    -webkit-text-stroke: 0.05vw #ED229D;
+    font-size: 10vw;
+    text-align: start;
+
+
 }
 
 a:hover{
-    font-size: 6vw;
-    text-shadow:2px 2px 8px#ED229D;
+    transition: all 0.5s ease;
+    font-size: 11.5vw;
+    text-shadow: 5px 5px #0129ff;
+
 }
 p1{
-    align-content: center;
+    align-content: flex-start;
     color: #fff;
-    font-family: "moret", serif;
-    font-weight: normal;
+    font-family:'HBO Max', sans-serif;
     font-style: normal;
-    font-size: 3vw;
-    text-stroke: 0.01ch #ED229D; 
-    -webkit-text-stroke: 0.01ch #ED229D;  
+    font-size: 4vw;
 }
-footer {
-    display: inline-block;
-    margin-bottom: 10vh;
-   }
-
+.container{
+  border: 1px solid #0129ff;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5vh;
+  margin: 1vh; 
+  background: radial-gradient(closest-side,#0129ff,#000ceb,black 99vh);
+  border-radius: 1.5vh; 
+  align-items: center;
+  justify-content: center;
+}
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center; 
+  text-align:start;
+  padding: 3vh;
+  max width: 35vh;
+  
+}
