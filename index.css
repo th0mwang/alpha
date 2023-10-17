@@ -141,18 +141,24 @@ p3{
  }
 
 
- .myversion:hover .hover2 {
-   transform: translateY(-6.5vh) ; /* Move the image up on hover */
-   border: 0.2vh solid #fff
+ .myversion .p4,
+.myversion .p5 {
+   position: absolute;
+   bottom: -10%; /* Initially, position the text at the bottom of the container */
+   left: 0;
+   width: 100%;
+   padding: 1vh;
+   transition: bottom opacity 0.5s; /* Add opacity transition */
+   opacity: 0; /* Initially set the opacity to 0 */
+}
 
+.myversion:hover .hover2 {
+   transform: translateY(-6.5vh); /* Move the image up on hover */
+   border: 0.2vh solid #fff;
+}
 
- }
-
- .myversion:hover .p4 {
-   bottom: 1vh; /* Move the text up on hover to show it */
- }
- 
- .myversion:hover .p5 {
-   bottom: 2vh; /* Move the text up on hover to show it */
- }
- 
+.myversion:hover .p4,
+.myversion:hover .p5 {
+   bottom: -2vh; /* Move p4 and p5 down on hover to show them */
+   opacity: 1; /* Fade in the text on hover */
+}
