@@ -1,0 +1,49 @@
+body{
+    background-color: #0f0f0f;
+}
+a{
+    font-family: 'YouTube Sans Dark', sans-serif;
+    font-size: 7vw;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    color: white;
+    text-decoration: none;
+    transition: transform 0.5s ease, color 0.5s ease;
+}
+a:hover{
+    transform: scale(1.1);
+    transform-origin: center;
+    color: red; 
+ }
+
+ .grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1vh;
+    font-family: 'YouTube Sans Dark', sans-serif;
+}
+
+.grid-item {
+    background-color: #3f3f3f;
+    border-radius: 10px;
+    color: white;
+    padding: 1vh;
+    text-align: center;
+    font-family: 'YouTube Sans Dark', sans-serif;
+
+}
+
+@media (max-width: 500px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        font-family: 'YouTube Sans Dark', sans-serif;
+
+    }
+}
+
+p1{
+    color: red;
+    font-size: 1.5vw;
+}
