@@ -1,10 +1,11 @@
-#center{
-    
-  align-items:center;
- justify-content:center; 
- text-align:center;
- 
-}
+.center {
+   width: 80%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+ }
 
 body{
  background-color: #050320;
@@ -23,7 +24,9 @@ a{
 
 }
 
-
+img{
+   width: 100%;
+}
 
 a:hover{
    font-size: 11.5vw;
@@ -64,16 +67,6 @@ p1{
  display:inline-flex; 
  flex-direction: row;
 }
-video {
- display: block;
- margin: 0 auto;
- }
- .center{
-  display: flex;
- justify-content: center;
- align-items: center;
- text-align: center;
- }
 
 p2{
    color: #fff;
@@ -100,6 +93,7 @@ p3{
    padding: -1vh;
    transition: bottom 0.3s;
 }
+
 .p5{
    color: #fff;
    font-family: Arial, Helvetica, sans-serif;
@@ -113,12 +107,13 @@ p3{
    transition: bottom 0.3s;
 }
 
- .example{
-   display:flexbox;
-   justify-content: center;
-   align-items: center;
-   text-align: start;
- }
+.myversion,
+.example {
+  display: flex;
+  flex-direction: column; /* Display them in a column layout */
+  align-items: center;
+  text-align: center;
+}
 
 
  .hover{
@@ -132,28 +127,33 @@ p3{
 
  .myversion{
    position: relative;
-   overflow: hidden;
+   display: flexbox;
  }
 
  .hover2{
-   width: 50vh;
    transition: transform 0.35s;
    border: 0.2vh solid transparent;
  }
 
 
- .myversion:hover .hover2 {
-   transform: translateY(-6.5vh) ; /* Move the image up on hover */
-   border: 0.2vh solid #fff
+ .myversion .p4,
+.myversion .p5 {
+   position: absolute;
+   bottom: -10%; /* Initially, position the text at the bottom of the container */
+   left: 0;
+   width: 100%;
+   padding: 1vh;
+   transition: bottom opacity 0.5s; /* Add opacity transition */
+   opacity: 0; /* Initially set the opacity to 0 */
+}
 
+.myversion:hover .hover2 {
+   transform: translateY(-6.5vh); /* Move the image up on hover */
+   border: 0.2vh solid #fff;
+}
 
- }
-
- .myversion:hover .p4 {
-   bottom: 1vh; /* Move the text up on hover to show it */
- }
- 
- .myversion:hover .p5 {
-   bottom: 2vh; /* Move the text up on hover to show it */
- }
- 
+.myversion:hover .p4,
+.myversion:hover .p5 {
+   bottom: -2vh; /* Move p4 and p5 down on hover to show them */
+   opacity: 1; /* Fade in the text on hover */
+}
