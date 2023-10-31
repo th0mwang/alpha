@@ -15,7 +15,7 @@ a{
 a:hover{
     transform: scale(1.1);
     transform-origin: center;
-    color: red; 
+    color: rgb(255, 28, 28); 
  }
 
  .grid-container {
@@ -44,6 +44,21 @@ a:hover{
 }
 
 p1{
-    color: red;
+    color: rgb(228, 77, 77);
     font-size: 1.5vw;
 }
+
+img{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 5vh;
+}
+
