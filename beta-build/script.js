@@ -44,4 +44,8 @@ fadeImage.style.opacity = 1;
       $(this).text('Unmute');
     }
 });
+
+
+
 });
+
