@@ -45,7 +45,7 @@ a:hover{
 
 p1{
   color: red;
-  font-size: 3vw;
+  font-size: 2vw;
 }
 
 .container{
@@ -91,6 +91,19 @@ video {
   cursor: pointer; /* Change cursor on hover */
 }
 
+p{
+  text-align: left;
+padding-left: 5vh;
+}
+
+p2,p3{
+  color: #fff;
+  font-size: 1.3vh;
+  font-family: 'Inter', sans-serif;
+  opacity: 50%;
+  text-align: left;
+
+}
 
 .fade-image:hover {
   position: absolute;
@@ -152,4 +165,30 @@ opacity: 0.5;
   top: 5vh;
   right: 1vh;
   opacity: 1;
+}
+
+.text-overlay {
+  position: absolute;
+  bottom: -65px; 
+  width: 28.5vh;
+  padding: 1vh; /* Adjust padding as needed */
+  background: rgba(0, 0, 0, 1); /* Background color with transparency */
+  font-family: 'YouTube Sans Dark', sans-serif;
+}
+
+.text-overlay p {
+  color: white;
+  margin: 0;
+}
+
+.overlay-content {
+  display: flex;
+  align-items: center;
+}
+
+.circular-image {
+  border-radius: 50%;
+  margin-right: 10px; /* Adjust margin as needed */
+  width: 30px; /* Adjust the width of the circular image */
+  height: 30px; /* Adjust the height of the circular image */
 }
