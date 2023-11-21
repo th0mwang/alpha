@@ -17,31 +17,36 @@ a:hover{
   transform-origin: center;
   color: red; 
 }
-
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 35vw; /* Set the width of the column to 35vw */
   gap: 1vh;
   font-family: 'YouTube Sans Dark', sans-serif;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .grid-item {
-  background-color: #3f3f3f;
-  border-radius: 10px;
-  color: white;
-  padding: 1vh;
-  text-align: center;
-  font-family: 'YouTube Sans Dark', sans-serif;
-  font-size:2vh;
+    font-size: 2vh;
+    background-color: #3f3f3f;
+    border-radius: 7px;
+    color: white;
+    padding-top: 3vh;
+    padding-left: 3vw;
+    padding-right:3vw;
+    text-align: start;
+    padding-bottom:3vh;
+    margin-bottom: 2vh; /* Add some space between grid items */
 }
 
 @media (max-width: 500px) {
-  .grid-container {
-      grid-template-columns: 1fr;
-      font-family: 'YouTube Sans Dark', sans-serif;
-
-  }
+    .grid-item {
+        margin-bottom: 0; /* Remove space between grid items on small screens */
+    }
 }
+
+
 
 p1{
   color: red;
