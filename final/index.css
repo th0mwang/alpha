@@ -1,7 +1,60 @@
-body{
+body {
     background-color: #0f0f0f;
+    margin: 0; /* Remove default body margin */
+    display: flex;
+    flex-direction: column; /* Stack children in a column */
+    font-family: 'YouTube Sans Dark', sans-serif;
 }
-a{
+
+header {
+    color: white;
+    font-family: 'YouTube Sans Dark', sans-serif;
+    font-size: 2vw;
+    text-align: center;
+    padding: 1vh;
+}
+
+.grid-container {
+    font-family: 'YouTube Sans Dark', sans-serif;
+    border:3vw;
+}
+
+.grid-item {
+    font-size: 3.5vh;
+    background-color: #3f3f3f;
+    border-radius: 7px;
+    color: white;
+    padding-top: 3vh;
+    padding-left: 5vw;
+    padding-right:5vw;
+    text-align: start;
+    padding-bottom:3vh;
+    margin-bottom: 1vh; /* Add some space between grid items */
+}
+
+@media (max-width: 500px) {
+    .grid-item {
+        margin-bottom: 0; /* Remove space between grid items on small screens */
+    }
+}
+
+.container {
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    width: 50vw; 
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    color: white;
+    font-family: 'YouTube Sans Dark', sans-serif;
+    font-size: 3vw;
+}
+
+a {
     font-family: 'YouTube Sans Dark', sans-serif;
     font-size: 7vw;
     align-items: center;
@@ -12,45 +65,34 @@ a{
     text-decoration: none;
     transition: transform 0.5s ease, color 0.5s ease;
 }
-a:hover{
+
+a:hover {
     transform: scale(1.1);
     transform-origin: center;
-    color: red; 
- }
-
- .grid-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1vh;
-    font-family: 'YouTube Sans Dark', sans-serif;
-}
-
-.grid-item {
-    background-color: #3f3f3f;
-    border-radius: 10px;
-    color: white;
-    padding: 1vh;
-    text-align: start;
-    font-family: 'YouTube Sans Dark', sans-serif;
-
+    color: red;
 }
 
 @media (max-width: 500px) {
-    .grid-container {
-        grid-template-columns: 1fr;
-        font-family: 'YouTube Sans Dark', sans-serif;
+    body {
+        height: auto; /* Reset body height on small screens */
+        overflow: auto; /* Allow scrolling on small screens if needed */
+    }
 
+    .container {
+        height: auto; /* Reset container height on small screens */
     }
 }
 
-p1{
-    color: red;
-    font-size: 1.5vw;
+
+figcaption{
+        font-family: 'YouTube Sans Dark', sans-serif;
+    font-size: 3.5vh;
+text-align: center;
+align-content: center;
+    justify-content: center;
+    color:white;
 }
 
-.container{
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    text-align: center;
+img{
+    width:35%;
 }
