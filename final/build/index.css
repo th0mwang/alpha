@@ -1,0 +1,346 @@
+body {
+    background-color: black;
+    font-family: 'Inter', sans-serif;
+    
+}
+
+
+#all{
+display: flex;
+align-items: center;
+justify-content: center;
+position: relative;
+}
+
+
+#icon {
+    position: relative;
+    display: inline-block;
+    transition: all 0.5s;
+}
+
+.hidden {
+    display: none;
+}
+
+.play-animation {
+    animation: bounce-out 1.5s ease;
+}
+
+@keyframes bounce-out {
+    0% { transform: scale(1); }
+    25% { transform: scale(1.5); }
+    50% { opacity: 1; }
+    100% { opacity: 0; transform: scale(0.5); }
+}
+
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 2.3vw;
+    height: 2.3vw;
+    filter: invert(1);
+    opacity: 0; /* Initial opacity */
+    background-color: white;
+    border: none;
+    margin: 1vh;
+    transition: opacity 0.5s; /* Added transition */
+}
+
+  .toggle-button i {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 1;
+  }
+  
+  .toggle-button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+  
+  .toggle-button:hover i {
+    cursor: pointer;
+    opacity: 1;
+  }
+  
+  .toggle-button.active {
+    opacity: 1;
+  }
+  
+  .toggle-button.active i {
+    opacity: 1;
+  }
+  
+
+
+button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+#bounce-out:hover{
+    opacity: 0.8;  
+  }
+  
+#thumbnail {
+    width: 21vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.5s;
+}
+
+#thumbnail:hover {
+    opacity: 0;
+}
+
+#profile {
+    border-radius: 50%;
+    width: 15%;
+    margin-left: 1vh;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    margin-right: 0.3vw;
+}
+
+#hover {
+    width: 21vw;
+    height: auto;
+    z-index: 1; /* Place the video below the image */
+    display: block;
+  }
+
+  
+
+.p1 {
+    margin-left: 1vw;
+    font-size: 1.1vw;
+    font-weight: bold;
+    text-align: start;
+}
+
+.row2 {
+    font-size: 1vw;
+    float: left;
+    display: table-row;
+    text-align: flex-start;
+    opacity: 0.5;
+}
+
+.info {
+    padding: 0;
+    border: 0;
+}
+
+
+.scroll {
+    position: absolute;
+    bottom: 1vh;
+    top: -1vw;
+    z-index: 1;
+    color: white;
+    transition: all 0.5s;
+    padding: 0%;
+    border: 0;
+    max-width: 21vw;
+}
+
+#bounce-out {
+    transition: all 1s;
+}
+
+#bounce-out:hover {
+    position: absolute;
+    opacity: 0.9;
+    transform: scale(0.9);
+}
+
+#overlay {
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    transition: transform 0.5s;
+    cursor:pointer;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    max-width: 21vw;
+}
+
+#all {
+    height: auto;
+    position: relative;
+}
+
+#all:hover #overlay {
+    transform: translateY(-3vw);
+}
+
+#all:hover .scroll {
+    transform: translateY(12ch);
+    background-color: #2B2B2B;
+    height: 16.6vh;
+    width: 25vw;
+}
+
+#all:hover .scroll:hover {
+    pointer-events: auto;
+}
+
+#hover:hover {
+    pointer-events: none;
+}
+
+#all:hover #hover {
+    pointer-events: none;
+}
+
+#all:hover #hover:hover {
+    pointer-events: auto;
+}
+
+
+
+#popup {
+	position:relative;
+}
+.profpic span { 
+	position:absolute;
+	visibility:hidden;
+}
+.profpic:hover, .profpic:hover span { 
+	visibility:visible;
+	top:5vh;
+	left:2vh; 
+	z-index:1;
+}
+
+
+#tag {
+    width:20vw;
+}
+
+#subscribe{
+    width: 7.5vw;
+    height: 5vh; 
+    background-color: #FF0000;
+    position: absolute;
+    bottom: 2vh;
+    left: 8.5vw;
+    padding-right: 2vh;
+ }
+ 
+p1{
+    position: absolute;
+    font-weight: bolder;
+    font-size: 2.5vh;
+    top: 0.vh;
+    color: white;
+    right: 0.8vh;
+}
+ 
+#youtube{
+    filter: invert(1);
+    height: 4.5vh; 
+    position: absolute;
+    bottom: 2.5vh;
+    left: 8.7vw;
+    align-content: center;
+    align-items: center;
+    z-index: 1000;
+
+}
+
+@media only screen and (min-width: 1281px) {
+
+    .scroll {
+        position: absolute;
+        bottom: 1vh;
+        top: 5.5vw;
+        z-index: 1;
+        color: white;
+        transition: all 0.5s;
+        padding: 0%;
+        border: 0;
+        width: 25vw;
+    }
+
+    #all:hover .scroll {
+    transform: translateY(10.5ch);
+    background-color: #2B2B2B;
+    height: 16.6vh;
+}
+
+    #all{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        margin-top:10vh;
+        }
+        #overlay {
+            position: absolute;
+            top: 0;
+            z-index: 2;
+            transition: transform 0.5s;
+            cursor:pointer;
+            align-items: center;
+            align-content: center;
+            display: flex;
+            max-width: 21vw;
+        }
+        .p1 {
+            margin-left: 1vw;
+            font-size: 1.1vw;
+            font-weight: bold;
+            text-align: start;
+        }
+        
+        .row2 {
+            font-size: 1vw;
+            float: left;
+            display: table-row;
+            text-align: start;
+            opacity: 0.5;
+        }
+        #subscribe{
+            width: 7.5vw;
+            height: 5vh; 
+            background-color: #FF0000;
+            position: absolute;
+            bottom: 2vh;
+            left: 8.5vw;
+            padding-right: 2vh;
+         }
+         
+        p1{
+            position: absolute;
+            font-weight: bolder;
+            font-size: 3vh;
+            top: 0.5vh;
+            color: white;
+            right: 0.8vh;
+        }
+         
+        #youtube{
+            filter: invert(1);
+            height: 5vh; 
+            position: absolute;
+            bottom: 2vh;
+            left: 8.7vw;
+            align-content: center;
+            align-items: center;
+            z-index: 1000;
+        
+        }
+
+        
+}
