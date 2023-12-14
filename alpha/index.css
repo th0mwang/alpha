@@ -1,0 +1,159 @@
+.center {
+   width: 80%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+ }
+
+body{
+ background-color: #050320;
+ }
+
+
+
+a{
+   color: #fff;
+   font-family:'HBO Max', sans-serif;
+   font-weight: bold;
+   font-style: normal;
+   font-size: 10vw;
+   text-align: center;
+   transition: all 0.5s ease;
+
+}
+
+img{
+   width: 100%;
+}
+
+a:hover{
+   font-size: 11.5vw;
+   text-shadow: 3px 3px #0129ff;
+
+}
+p1{
+   align-content: flex-start;
+   color: #fff;
+   font-family:'HBO Max', sans-serif;
+   font-style: normal;
+   font-size: 4vw;
+}
+.container{
+ border: 1px solid #0129ff;
+ display: flex;
+ flex-wrap: wrap;
+ padding: 5vh;
+ margin: 1vh; 
+ background: radial-gradient(closest-side,#0129ff,#000ceb,black 200%);
+ border-radius: 1.5vh; 
+ align-items: flex-start;
+ justify-content: flex-start;
+}
+.flex {
+ align-items:center;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content:center; 
+ text-align:center;
+ padding: 3vh;
+ max-width: 35vh;
+ 
+}
+
+.flex2 {
+ position: relative;
+ display:inline-flex; 
+ flex-direction: row;
+}
+
+p2{
+   color: #fff;
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: bold;
+   line-height: 2;
+}
+p3{
+   color: #fff;
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: 50;
+   opacity: 50%;
+}
+
+.p4{
+   color: #fff;
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: bold;
+   line-height: 5;
+   position: absolute;
+   bottom: -100%; /* Initially, position the text below the container */
+   left: 0;
+   width: 100%;
+   padding: -1vh;
+   transition: bottom 0.3s;
+}
+
+.p5{
+   color: #fff;
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: 50;
+   opacity: 50%;
+   position: absolute;
+   bottom: -100%; /* Initially, position the text below the container */
+   left: 0;
+   width: 100%;
+   padding: -1vh;
+   transition: bottom 0.3s;
+}
+
+.myversion,
+.example {
+  display: flex;
+  flex-direction: column; /* Display them in a column layout */
+  align-items: center;
+  text-align: center;
+}
+
+
+ .hover{
+  transition: border 0.1s;
+  border: 2px solid transparent;
+ }
+ 
+ .hover:hover{
+   border: 2px solid #fff
+ }
+
+ .myversion{
+   position: relative;
+   display: flexbox;
+ }
+
+ .hover2{
+   transition: transform 0.35s;
+   border: 0.2vh solid transparent;
+ }
+
+
+ .myversion .p4,
+.myversion .p5 {
+   position: absolute;
+   bottom: -10%; /* Initially, position the text at the bottom of the container */
+   left: 0;
+   width: 100%;
+   padding: 1vh;
+   transition: bottom opacity 0.5s; /* Add opacity transition */
+   opacity: 0; /* Initially set the opacity to 0 */
+}
+
+.myversion:hover .hover2 {
+   transform: translateY(-6.5vh); /* Move the image up on hover */
+   border: 0.2vh solid #fff;
+}
+
+.myversion:hover .p4,
+.myversion:hover .p5 {
+   bottom: -2vh; /* Move p4 and p5 down on hover to show them */
+   opacity: 1; /* Fade in the text on hover */
+}
