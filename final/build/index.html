@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Build</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <br><br>
+    <div>
+        <div id="borderbox">
+    <div id="all">
+        <div id="overlay">
+            <div id="icon">
+                <video id="hover" src="video/Resize video project.mp4" loop muted>
+                    Your browser does not support the video tag.
+                </video>
+                <!-- <button id="click">
+                <img id="playlist" src="images/noun-playlist-2069378.png" border="0">
+                </button> -->
+                <img id="thumbnail" src="images/thumbnail.jpg">
+                <button class="initial" id="bounce-out" onclick="bounceout()"><i class="material-icons" id="video-control" style="font-size:2.2vw">playlist_add</i></button>
+                <button class="hidden" id="video-control-check" onclick="bounceout()"><i class="material-icons" id="playlist1" >playlist_add_check</i></button>
+            </div>
+        </div>
+            <div class="scroll">
+            <br>
+            <div class="row1">
+                <div id="popup">
+                    <a class="profpic" href="#">
+            <div><img id="profile" src="images/profile.jpg"></div>
+            <span>
+                <div id="profile">
+                    <img id="tag" src="images/popup.png">
+        </div>
+            </span></a>
+        </div>
+             </div>
+             <div class="info">
+             <div class="p1">
+                LilLionBee - Parasite - Official Video       
+               </div>
+            <div class="row2">
+                <div>LilLionBee</div>
+                <div>202 views |  3 months ago</div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </div>
+    </div>
+    <a href="https://www.youtube.com" target="_blank">YouTube</a>
+<br><br>
+<div>
+
+
+
+      <div class="grid-container">
+        <div class="grid-item"><p2>Triggers:</p2><br><br>
+        Hover on:<br>
+<ul>
+<li>Thumbnail</li>
+<li>Video</li>
+<li>Watch Later</li>
+<li>Profile picture</li>
+</ul>
+<hr>
+<br>
+Hover off:<br>
+<ul>
+<li>Thumbnail</li>
+<li>Video</li>
+<li>Watch Later</li>
+<li>Profile picture</li>
+</ul>
+<hr>
+<br>
+Click on:<br>
+<ul>
+<li>Watch Later</li>
+<li>Remove from Watch Later</li>
+</ul>
+        
+        </div>
+        <div class="grid-item">
+            <p2>Rules:</p2><br><br>Hover on:<br><br>
+<ul>
+<li>Thumbnail: It will fade away, revealing the video and a card slides down with more information about the video</li><br>
+<li>Video: The video will start playing</li><br>
+<li>Watch Later: the button will shrink</li><br>
+<li>Profile picture: a popup fades in with some of the YouTuber's channel information</li>
+</ul>
+<hr>
+<br>
+Hover off:<br><br>
+<ul>
+<li>Thumbnail: The thumbnail will fade back in and the card will slide back up behind the video</li><br>
+<li>Video: The video will pause then reset</li><br>
+<li>Watch Later:  The button and icon grow back to its original size</li><br>
+<li>Profile picture: The popup fade away</li><br>
+</ul>
+<hr>
+<br>
+Click on:<br><br>
+<ul>
+<li>Watch Later: The icon changes into the "Added to Watch Later Playlist" button at 100% opacity then an animation where the icon grows then shrinks then returns to its origianl size plays</li><br>
+<li>Remove from Watch Later: The icon changes to the "Add to Watch Later Playlist" at 50% opacity then an animation where the icon grows then shrinks then returns to its origianl size plays</li><br>
+</ul>
+     
+           </div>
+            <div class="grid-item"><p2>Feedback:</p2><br><br>Hover on:<br>
+<ul>
+<li>Thumbnail: It will fade away, revealing the video and a card slides down with more information about the video</li><br>
+<li>Video: The video will start playing</li><br>
+<li>Watch Later: the button will shrink</li><br>
+<li>Profile picture: a popup fades in with some of the YouTuber's channel information</li>
+</ul>
+<hr>
+<br>
+Hover off:<br>
+<ul>
+<li>Thumbnail: The thumbnail will fade back in and the card will slide back up behind the video</li><br>
+<li>Video: The video will pause then reset</li><br>
+<li>Watch Later:  The button and icon grow back to its original size</li><br>
+<li>Profile picture: The popup fade away</li>
+</ul>
+<hr>
+<br>
+Click on:<br>
+<ul>
+<li>Watch Later: The icon changes into the "Added to Watch Later Playlist" button at 100% opacity then an animation where the icon grows then shrinks then returns to its origianl size plays</li><br>
+<li>Remove from Watch Later: The icon changes to the "Add to Watch Later Playlist" at 50% opacity then an animation where the icon grows then shrinks then returns to its origianl size plays</li>
+</ul>
+      
+               </div>
+               <div class="grid-item"><p2>Loops & Modes:</p2><br><br>
+               <ul>
+                   <li>The video will loop if you hover long enough</li><br>
+                   <li>If you click on the Watch Later button or remove the video from you Watch Later playlist mid-animatiton, it interupts the animation and restarts with the other one playing its animation</li>
+
+               </ul>
+               <br></div>
+</div>
+</div>
+    <script src="index.js"></script>
+</body>
+</html>
