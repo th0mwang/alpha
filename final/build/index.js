@@ -85,6 +85,8 @@ document.addEventListener('DOMContentLoaded', function () {
   iconButton.addEventListener('mouseout', handleButtonOut);
   button.addEventListener('click', toggleButtons);
   buttonCheck.addEventListener('click', toggleButtons);
+  buttonCheck.addEventListener('mouseover', handleButtonHover); // Added this line
+  buttonCheck.addEventListener('mouseout', handleButtonOut); // Added this line
 
   // Check the video status every 100 milliseconds
   setInterval(function () {
